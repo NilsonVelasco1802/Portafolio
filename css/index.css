@@ -1,0 +1,86 @@
+header{
+    border-bottom: solid 2px var(--color-border);
+    padding: var(--space-4) 0;
+    & h1{
+        font-size: var(--font-3xl);
+        line-height: none;
+        cursor: pointer;
+        color: var(--color-primary-hover);
+    }
+
+    & a{
+        color: var(--color-text);
+    }
+    & a:hover{
+        color: var(--color-primary-hover);
+    }
+    
+}
+
+#main-texto{
+    padding: var(--space-6) 0;
+    & h2{
+        font-size: var(--font-6xl);
+    }
+}
+
+#contacto-enlaces{
+
+    
+    & a{
+        margin: 0 var(--space-3);
+    }
+    & svg{
+    margin: 0 var(--space-3)  0 0;
+    width: var(--space-3);
+    height: var(--space-3);
+    color: var(--color-title);
+    }
+    & #p-ubicacion{
+        padding: 0;
+    }
+}
+
+#img-perfil{
+    width: 20%;
+    margin: var(--space-16) 0;
+    aspect-ratio: 1 / 1;
+    border: solid 1px var(--color-text);
+    border-radius: 10%;
+}
+
+#color-celeste{
+    color: var(--color-primary-hover);
+}
+
+#contacto{
+    padding: var(--space-4) 0;
+}
+
+#contacto-mail{
+    & a{
+        color: var(--color-text);
+    }
+    & a:hover{
+        color: var(--color-primary-hover);
+    }
+}
+
+#contacto-footer svg{
+    margin: 0 var(--space-3);
+    width: var(--space-5);
+    height: var(--space-5);
+    color: var(--color-title);
+}
+
+#iconos-header svg:hover{
+    
+    color: var(--color-title);
+}
+
+footer{
+    color: var(--color-text);
+    padding: var(--space-4) 0;
+    border-top: solid 2px var(--color-border);
+    
+}
