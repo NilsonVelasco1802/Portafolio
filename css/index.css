@@ -36,39 +36,6 @@ header{
 }
 */
 
-/*Responside main*/
-
-@media(max-width:1429px){
-    body{
-        padding: 0 var(--space-10);
-    }
-    #main{
-    margin-top: none;
-    }
-    #g-main{
-    
-    display: flex;
-    flex-direction: column-reverse;
-    
-    
-    & #foto-perfil{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    & #main-texto{
-        padding-top: none;
-    }
-
-    & #foto-perfil{
-        border-bottom: 1px solid var(--color-border);
-    }
-    & #img-perfil{
-        margin: var(--space-6) 0;
-        width: 40vw;
-    }
-}
-}
 
 /*Main*/
 
@@ -145,18 +112,44 @@ header{
     border-radius: 10%;
 }
 
-/*Sobre mi*/
 
-@media(max-width:1174px){
-    #sobre-mi{
+/*Responside main*/
+
+@media(max-width:1429px){
+    body{
+        padding: 0 var(--space-10);
+    }
+    #main{
+    margin-top: none;
+    }
+    #g-main{
+    
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
+    
+    
+    & #foto-perfil{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    & #main-texto{
+        padding-top: none;
     }
 
-    #sobre-mi-texto{
-        margin-bottom: var(--space-4);
+    & #foto-perfil{
+        border-bottom: 1px solid var(--color-border);
+    }
+    & #img-perfil{
+        margin: var(--space-6) 0;
+        width: 40vw;
     }
 }
+}
+
+/*Sobre mi*/
+
+
 
 #sobre-mi{
     padding: var(--space-10) 0;
@@ -170,6 +163,17 @@ header{
         width: var(--space-5);
         height: var(--space-5);
         color: var(--color-primary-hover);
+    }
+}
+
+@media(max-width:1174px){
+    #sobre-mi{
+    display: flex;
+    flex-direction: column;
+    }
+
+    #sobre-mi-texto{
+        margin-bottom: var(--space-4);
     }
 }
 
