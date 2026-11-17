@@ -1,6 +1,11 @@
+/*Header*/
 header{
-    border-bottom: solid 2px var(--color-border);
-    padding: var(--space-4) 0;
+    background-color: var(--color-background);
+    border-bottom: solid 1px var(--color-border);
+    padding: var(--space-5) 0;
+    position: sticky;
+    top: 0;
+    z-index: 50;
     & h1{
         font-size: var(--font-3xl);
         line-height: none;
@@ -16,24 +21,82 @@ header{
     }
     
 }
+/*
+#g-main{
+    
+    display: flex;
+    flex-direction: column-reverse;
+    
+    & #foto-perfil{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+}
+*/
+
+/*Responside main*/
+
+@media(max-width:1429px){
+    body{
+        padding: 0 var(--space-10);
+    }
+    #main{
+    margin-top: none;
+    }
+    #g-main{
+    
+    display: flex;
+    flex-direction: column-reverse;
+    
+    
+    & #foto-perfil{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    & #main-texto{
+        padding-top: none;
+    }
+
+    & #foto-perfil{
+        border-bottom: 1px solid var(--color-border);
+    }
+    & #img-perfil{
+        margin: var(--space-6) 0;
+        width: 40vw;
+    }
+}
+}
+
+/*Main*/
+
+#main{
+    margin-top: var(--space-5);
+}
+#g-main{
+    border-bottom: 1px solid var(--color-border);
+}
 
 #main-texto{
-    padding: var(--space-6) 0;
+    padding: 0 0 var(--space-12) 0 ;
     & h2{
         font-size: var(--font-6xl);
     }
 }
 
-#contacto-enlaces{
+#main-enlaces{
 
     
     & a{
         margin: 0 var(--space-3);
+        padding: var(--space-2) var(--space-3);
     }
     & svg{
     margin: 0 var(--space-3)  0 0;
-    width: var(--space-3);
-    height: var(--space-3);
+    width: var(--space-4);
+    height: var(--space-4);
     color: var(--color-title);
     }
     & #p-ubicacion{
@@ -41,13 +104,99 @@ header{
     }
 }
 
+#email-color-azul{
+    background-color: var(--color-primary);
+    transition: var(--transition-fast);
+
+    &:hover{
+        background-color: var(--color-primary-hover);
+    }
+    
+
+}
+
+#githut-color-azul{
+    border: solid 1px var(--color-border);
+    transition: var(--transition-fast);
+
+    &:hover{
+        background-color: var(--color-primary-hover);
+        color: var(--color-background);
+        & svg{
+            color: var(--color-background);
+        }
+    }
+}
+
+#p-ubicacion{
+
+    & svg{
+        margin-right: var(--space-1);
+    }
+    
+}
+
 #img-perfil{
-    width: 20%;
-    margin: var(--space-16) 0;
-    aspect-ratio: 1 / 1;
+    width: 25vw;
+    height: auto;
+    margin: var(--space-12) 0;
+    aspect-ratio: 3 / 3;
     border: solid 1px var(--color-text);
     border-radius: 10%;
 }
+
+/*Sobre mi*/
+
+@media(max-width:1174px){
+    #sobre-mi{
+    display: flex;
+    flex-direction: column;
+    }
+
+    #sobre-mi-texto{
+        margin-bottom: var(--space-4);
+    }
+}
+
+#sobre-mi{
+    padding: var(--space-10) 0;
+    border-bottom: 1px solid var(--color-border);
+
+    & h3{
+        margin-bottom: var(--space-4);
+    }
+
+    & svg{
+        width: var(--space-5);
+        height: var(--space-5);
+        color: var(--color-primary-hover);
+    }
+}
+
+/*Proyectos*/
+
+#proyectos{
+    padding: var(--space-10) 0;
+
+
+}
+
+#cartas-proyectos{
+    border: solid 1px var(--color-border);
+    transition: var(--transition-normal);
+}
+
+#cartas-proyectos:hover{
+    border: solid 1px var(--color-primary-hover);
+    transition: var(--transition-normal);
+}
+
+#cartas-texto{
+    padding: var(--space-4);
+    background-color: var(--color-card);
+}
+
+/*Contacto*/
 
 #color-celeste{
     color: var(--color-primary-hover);
@@ -55,6 +204,7 @@ header{
 
 #contacto{
     padding: var(--space-4) 0;
+    border-top: solid 1px var(--color-border);
 }
 
 #contacto-mail{
@@ -66,21 +216,24 @@ header{
     }
 }
 
-#contacto-footer svg{
+#contacto-iconos svg{
     margin: 0 var(--space-3);
     width: var(--space-5);
     height: var(--space-5);
     color: var(--color-title);
+    transition: var(--transition-fast);
 }
 
-#iconos-header svg:hover{
-    
-    color: var(--color-title);
+#contacto-iconos svg:hover{
+    color: var(--color-primary-hover);
 }
+
+
+/*footer*/
 
 footer{
     color: var(--color-text);
     padding: var(--space-4) 0;
-    border-top: solid 2px var(--color-border);
+    border-top: solid 1px var(--color-border);
     
 }
